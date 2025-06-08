@@ -1,50 +1,72 @@
-# Welcome to your Expo app 👋
+# 💸 Cross-Platform Expense Tracker App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A fully functional expense tracker app built with **React Native + Expo**, featuring secure **authentication**, real-time **balance updates**, and a **Neon-hosted PostgreSQL** backend served via **Express**. Designed for beginners with basic React knowledge—no prior React Native experience required.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Features
 
-   ```bash
-   npm install
-   ```
+### 📱 Cross-Platform Frontend (React Native + Expo)
+- Built with [React Native](https://reactnative.dev/) and [Expo](https://expo.dev/)
+- Test on both Android and iOS (real devices or emulators)
+- Pull-to-refresh, smooth animations, and mobile-optimized UI
 
-2. Start the app
+### 🔐 Secure Authentication
+- Signup & Login using [Clerk](https://clerk.dev/)
+- Email verification with 6-digit code before app access
+- Logout functionality to easily switch or sign out
 
-   ```bash
-   npx expo start
-   ```
+### 🏠 Key Screens
+- **Signup**
+- **Login**
+- **Email Verification**
+- **Home (Dashboard)**
+- **Create Transaction**
 
-In the output, you'll find options to open the app in a
+### 💸 Expense Tracking
+- Add income or expense entries with category tagging
+- Live balance updates based on all transactions
+- Delete unwanted or old transactions with a single tap
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 🔄 User Experience
+- Pull-to-refresh gesture built from scratch
+- Intuitive UI with modern icons and user-friendly interactions
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🧰 Backend API
 
-When you're ready, run:
+- Built using **Express.js**
+- Hosted on **Render** and connected to **Neon PostgreSQL**
+- RESTful endpoints for transaction management
+- Protected by **rate limiting** (Redis-based)
 
-```bash
-npm run reset-project
-```
+---
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📦 Tech Stack
 
-## Learn more
+| Frontend            | Backend            | Database    |
+|---------------------|--------------------|-------------|
+| React Native + Expo | Express.js         | Neon (Postgres) |
+| Clerk Authentication| Rate Limiting (Redis) |              |
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 🧪 Testing & Deployment
 
-## Join the community
+- Run the app directly on your **real mobile phone** using the **Expo Go** app
+- Backend hosted on **Render** with public API access
+- Postgres instance managed via **Neon**
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🛠️ Getting Started
+
+### 🔧 Prerequisites
+- Node.js & npm
+- Expo CLI (`npm install -g expo-cli`)
+- Git & GitHub
+- Neon DB account
+- Clerk account
+
+
